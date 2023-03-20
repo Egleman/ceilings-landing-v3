@@ -1,0 +1,37 @@
+.footer {
+    padding: 27px 0px;
+    background: url('../img/footer-bg.png') center/cover no-repeat;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+            font-size: 16px;
+            line-height: 12px;
+            color: #F1F5F9;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 0px 20px;
+            background: #FFFFFF;
+            border-radius: 4px;
+            height: 52px;
+            box-sizing: border-box;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .footer {
+        &__wrapper {
+            flex-direction: column;
+            gap: 12px;
+            a {
+                width: 100%;
+            }
+        }
+    }
+}

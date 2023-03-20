@@ -1,0 +1,23 @@
+.title {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    color: #0F172A;
+    span {
+        color: #6567F2;
+    }
+}
+@media (max-width: 798px) {
+    .title {
+        font-size: 35px;
+        line-height: 120%;
+    }
+}
+@media (max-width: 606px) {
+    .title {
+        font-size: 28px;
+        line-height: 120%;
+    }
+}

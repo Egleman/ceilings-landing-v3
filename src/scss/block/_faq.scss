@@ -1,0 +1,11 @@
+.faq {
+    padding: 36px 0px;
+    &__title {
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 606px) {
+    .faq {
+        padding: 24px 0px;
+    }
+}

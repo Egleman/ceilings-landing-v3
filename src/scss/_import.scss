@@ -1,0 +1,29 @@
+@import "../../node_modules/image-compare-viewer/src/styles/index.scss";
+
+@import './components/container';
+@import './components/title';
+@import './components/buttons';
+@import './components/accordion';
+@import './components/modal';
+@import './components/anchor';
+
+
+@import './block/header';
+@import './block/banner';
+@import './block/brand';
+@import './block/production';
+@import './block/calc';
+@import './block/video';
+@import './block/plan-pay';
+@import './block/how-much';
+@import './block/price';
+@import './block/questions';
+@import './block/faq';
+@import './block/presentation';
+@import './block/contacts';
+@import './block/map';
+@import './block/bottom-nav';
+@import './block/footer';
+
+@import '../../node_modules/swiper/swiper';
+@import '../../node_modules/nouislider/dist/nouislider.css';
