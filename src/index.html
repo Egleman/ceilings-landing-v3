@@ -27,7 +27,7 @@
             <div class="banner__label">Укажите площадь, м2</div>
             <div class="banner__slider">
                 <div class="banner__range">
-                    <div class="banner__range-count"><p><span>25</span> м<sup>2</sup></p></div>
+                    <input class="banner__range-count" value="25 м²">
                     <div class="slider-styled" id="slider-round"></div>
                     <div class="banner__steps">
                         <p class="banner__steps-step">
@@ -61,22 +61,101 @@
             </form>
         </div>
     </section>
-    <section class="brand">
+    <section class="about">
         <div class="container">
-            <div class="brand__grid">
-                <div class="brand__card"><img src="./img/brand-1.png" alt="brand"></div>
-                <div class="brand__card"><img src="./img/brand-2.png" alt=""></div>
-                <div class="brand__card"><img src="./img/brand-3.png" alt=""></div>
-                <div class="brand__card"><img src="./img/brand-4.png" alt=""></div>
-                <div class="brand__card"><img src="./img/brand-5.png" alt=""></div>
+            <div class="about__suptitle suptitle">О нас</div>
+            <div class="about__wrapper">
+                <div class="about__title title">
+                    Лучшие в мире потолков, готовые выполнять самые трудные заказы
+                </div>
+                <div class="about__description">
+                    Более чем за 10 лет сформировалась и устоялась нерушимая философия нашей компании: исполнительность, ответственность и качество 
+                </div>
+            </div>
+            <div class="about__grid">
+                <div class="about__card">
+                    <div class="about__card-body">
+                        <div class="about__card-title">Работаем по договору</div>
+                        <div class="about__card-description">Несем ответственность за свою работу</div>
+                        <a href="#" class="about__card-link">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.9987 5.16667C6.27484 5.16667 6.4987 5.39052 6.4987 5.66667V8.45956L7.64514 7.31311C7.84041 7.11785 8.15699 7.11785 8.35225 7.31311C8.54751 7.50838 8.54751 7.82496 8.35225 8.02022L6.35225 10.0202C6.15699 10.2155 5.84041 10.2155 5.64514 10.0202L3.64514 8.02022C3.44988 7.82496 3.44988 7.50838 3.64514 7.31311C3.84041 7.11785 4.15699 7.11785 4.35225 7.31311L5.4987 8.45956V5.66667C5.4987 5.39052 5.72256 5.16667 5.9987 5.16667Z" fill="#0F172A"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.832031 2.33333C0.832031 1.32081 1.65284 0.5 2.66536 0.5H6.38922C6.69864 0.5 6.99539 0.622916 7.21418 0.841709L10.8237 4.45118C11.0424 4.66998 11.1654 4.96672 11.1654 5.27614V11.6667C11.1654 12.6792 10.3446 13.5 9.33203 13.5H2.66536C1.65284 13.5 0.832031 12.6792 0.832031 11.6667V2.33333ZM2.66536 1.5C2.20513 1.5 1.83203 1.8731 1.83203 2.33333V11.6667C1.83203 12.1269 2.20513 12.5 2.66536 12.5H9.33203C9.79227 12.5 10.1654 12.1269 10.1654 11.6667V5.27614C10.1654 5.23194 10.1478 5.18955 10.1166 5.15829L6.50707 1.54882C6.47582 1.51756 6.43342 1.5 6.38922 1.5H2.66536Z" fill="#0F172A"/>
+                            </svg>
+                            Пример договора.pdf                           
+                        </a>
+                    </div>
+                </div>
+                <div class="about__card">
+                    <div class="about__card-body">
+                        <div class="about__card-title">Безопасный монтаж</div>
+                        <div class="about__card-description">Мы используем перфораторы с пылесборником используем только композитные баллоны</div>
+                    </div>
+                </div>
+                <div class="about__card">
+                    <div class="about__card-body">
+                        <div class="about__card-title">Гарантия на потолки</div>
+                        <div class="about__card-description">Мы предоставляем расширенную гарантию на установку 2 года и материал до 15 лет</div>
+                    </div>
+                </div>
+                <div class="about__card">
+                    <div class="about__card-body">
+                        <div class="about__card-title">Собственное производство</div>
+                        <div class="about__card-description">Благодаря отсутствию посредников и собственному производству наши цены ниже на 25%</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="production" >
+    <section class="photos">
+        <div class="container">
+            <div class="photos__suptitle suptitle">Фото</div>
+            <div class="photos__wrapper">
+                <div class="photos__title title">Наше производство</div>
+                <div class="photos__arrows">
+                    <button class="photos__arrows-left">
+                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.53033 0.46967C8.82322 0.762564 8.82322 1.23744 8.53033 1.53033L2.06066 8L8.53033 14.4697C8.82322 14.7626 8.82322 15.2374 8.53033 15.5303C8.23744 15.8232 7.76256 15.8232 7.46967 15.5303L0.469668 8.53033C0.329015 8.38968 0.249998 8.19891 0.249998 8C0.249998 7.80109 0.329015 7.61032 0.469668 7.46967L7.46967 0.46967C7.76256 0.176777 8.23744 0.176777 8.53033 0.46967Z" fill="#0F172A"/>
+                        </svg>                        
+                    </button>
+                    <button class="photos__arrows-right">
+                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.46967 15.5303C0.176777 15.2374 0.176777 14.7626 0.469671 14.4697L6.93934 8L0.46967 1.53033C0.176777 1.23744 0.176777 0.762564 0.46967 0.46967C0.762563 0.176777 1.23744 0.176777 1.53033 0.46967L8.53033 7.46967C8.67099 7.61032 8.75 7.80109 8.75 8C8.75 8.19891 8.67099 8.38968 8.53033 8.53033L1.53033 15.5303C1.23744 15.8232 0.762564 15.8232 0.46967 15.5303Z" fill="#0F172A"/>
+                        </svg>                        
+                    </button>
+                </div>
+            </div>
+            <div class="swiper swiper-photos">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="photos__slide">
+                            <img src="./img/photos-slide-1.png" alt="slide">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="photos__slide">
+                            <img src="./img/photos-slide-2.png" alt="slide">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="photos__slide">
+                            <img src="./img/photos-slide-1.png" alt="slide">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="photos__slide">
+                            <img src="./img/photos-slide-2.png" alt="slide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="production">
         <div class="anchor" id="production"></div>
         <div class="container">
             <div class="production__title title">
-                Натяжные потолки,<br> которые мы <span>производим</span>
+                Натяжные <span>потолки</span> нашего производства
             </div>
             <ul class="production__tabs">
                 <li class="production__tabs-item"><a href="#" class="production__tabs-link active">Матовые</a></li>
@@ -88,1964 +167,476 @@
             </ul>
             <div class="production__content active">
                 <div class="production__slider">
-                    <button class="production__arrow production__arrow_left">
-                        <svg width="18" height="32" viewBox="0 0 18 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.0607 0.93934C17.6464 1.52513 17.6464 2.47487 17.0607 3.06066L4.12132 16L17.0607 28.9393C17.6464 29.5251 17.6464 30.4749 17.0607 31.0607C16.4749 31.6464 15.5251 31.6464 14.9393 31.0607L0.93934 17.0607C0.353553 16.4749 0.353553 15.5251 0.93934 14.9393L14.9393 0.93934C15.5251 0.353553 16.4749 0.353553 17.0607 0.93934Z" fill="#A3A4F7"/>
-                        </svg>                            
-                    </button>
-                    <div class="swiper production-swiper">
+                    <div class="production__slider-top">
+                        <div class="production__slider-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
+                        <div class="production__slider-arrows">
+                            <button class="production__slider-left">
+                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.94194 0.724766C7.18602 0.968843 7.18602 1.36457 6.94194 1.60865L1.55055 7.00004L6.94194 12.3914C7.18602 12.6355 7.18602 13.0312 6.94194 13.2753C6.69786 13.5194 6.30214 13.5194 6.05806 13.2753L0.224723 7.44198C0.107513 7.32477 0.0416647 7.1658 0.0416647 7.00004C0.0416647 6.83428 0.107513 6.67531 0.224723 6.5581L6.05806 0.724766C6.30214 0.480687 6.69786 0.480687 6.94194 0.724766Z" fill="#0F172A"/>
+                                </svg>                                    
+                            </button>
+                            <button class="production__slider-right">
+                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.05806 13.2752C0.813981 13.0312 0.813981 12.6354 1.05806 12.3914L6.44945 6.99996L1.05806 1.60857C0.813981 1.36449 0.813981 0.968762 1.05806 0.724684C1.30214 0.480607 1.69786 0.480607 1.94194 0.724684L7.77528 6.55802C7.89249 6.67523 7.95834 6.8342 7.95834 6.99996C7.95834 7.16572 7.89249 7.32469 7.77528 7.4419L1.94194 13.2752C1.69786 13.5193 1.30214 13.5193 1.05806 13.2752Z" fill="#0F172A"/>
+                                </svg>                                    
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper swiper-production">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <div class="user">
-                                                <p class="text">Монтаж:</p>
-                                                <div>
-                                                    <img src="./img/avatar.png" alt="avatar">
-                                                    <p>Константин К.</p>
+                                    <div class="production__slide-top">
+                                        <div class="production__slide-user">
+                                            <img src="./img/avatar.png" alt="avatar">
+                                            <div class="text">
+                                                <p>Константин К.</p>
+                                                <span>Монтажник и замерщик</span>
+                                            </div>
+                                            <div class="arrow">
+                                                <div class="arrow__body">
+                                                    <svg width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.766123 2.22226C0.155511 1.50947 0.774626 0.424071 1.69898 0.586833L30.8923 5.72727C31.8752 5.90033 32.026 7.24816 31.1058 7.63425L20.8936 11.9188C20.4757 12.0942 20.228 12.5285 20.2898 12.9774L21.8006 23.9466C21.9368 24.9353 20.6998 25.4916 20.0505 24.7336L0.766123 2.22226Z" fill="#F9C56C"/>
+                                                    </svg>
+                                                    <p>Это я сделал</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
+                                        <div class="production__slide-price">
+                                            <p>32 440 руб</p>
+                                            <span>Стоимость натяжного потолка</span>
                                         </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <br><span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
+                                    </div>
+                                    <div class="production__slide-img">
+                                        <img src="./img/production-slide.png" alt="slide">
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <div class="user">
-                                                <p class="text">Монтаж:</p>
-                                                <div>
-                                                    <img src="./img/avatar.png" alt="avatar">
-                                                    <p>Константин К.</p>
+                                    <div class="production__slide-top">
+                                        <div class="production__slide-user">
+                                            <img src="./img/avatar.png" alt="avatar">
+                                            <div>
+                                                <p>Константин К.</p>
+                                                <span>Монтажник и замерщик</span>
+                                            </div>
+                                            <div class="arrow">
+                                                <div class="arrow__body">
+                                                    <svg width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.766123 2.22226C0.155511 1.50947 0.774626 0.424071 1.69898 0.586833L30.8923 5.72727C31.8752 5.90033 32.026 7.24816 31.1058 7.63425L20.8936 11.9188C20.4757 12.0942 20.228 12.5285 20.2898 12.9774L21.8006 23.9466C21.9368 24.9353 20.6998 25.4916 20.0505 24.7336L0.766123 2.22226Z" fill="#F9C56C"/>
+                                                    </svg>
+                                                    <p>Это я сделал</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
+                                        <div class="production__slide-price">
+                                            <p>32 440 руб</p>
+                                            <span>Стоимость натяжного потолка</span>
                                         </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <br><span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="production__slide">
                                     <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <div class="user">
-                                                <p class="text">Монтаж:</p>
-                                                <div>
-                                                    <img src="./img/avatar.png" alt="avatar">
-                                                    <p>Константин К.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
-                                        </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <br><span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <div class="user">
-                                                <p class="text">Монтаж:</p>
-                                                <div>
-                                                    <img src="./img/avatar.png" alt="avatar">
-                                                    <p>Константин К.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
-                                        </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <br><span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <div class="user">
-                                                <p class="text">Монтаж:</p>
-                                                <div>
-                                                    <img src="./img/avatar.png" alt="avatar">
-                                                    <p>Константин К.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
-                                        </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <br><span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <div class="user">
-                                                <p class="text">Монтаж:</p>
-                                                <div>
-                                                    <img src="./img/avatar.png" alt="avatar">
-                                                    <p>Константин К.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
-                                        </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <br><span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
+                                        <img src="./img/production-slide.png" alt="slide">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-pagination production__pagination"></div>
                     </div>
-                    <button class="production__arrow production__arrow_right">
-                        <svg width="18" height="32" viewBox="0 0 18 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.939341 31.0607C0.353555 30.4749 0.353555 29.5251 0.939341 28.9393L13.8787 16L0.93934 3.06066C0.353554 2.47487 0.353553 1.52513 0.93934 0.93934C1.52513 0.353553 2.47487 0.353553 3.06066 0.93934L17.0607 14.9393C17.342 15.2206 17.5 15.6022 17.5 16C17.5 16.3978 17.342 16.7794 17.0607 17.0607L3.06066 31.0607C2.47487 31.6464 1.52513 31.6464 0.939341 31.0607Z" fill="#A3A4F7"/>
-                        </svg>                            
-                    </button>
                 </div>
             </div>
             <div class="production__content">
                 <div class="production__slider">
-                    <button class="production__arrow production__arrow_left">
-                        <svg width="18" height="32" viewBox="0 0 18 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.0607 0.93934C17.6464 1.52513 17.6464 2.47487 17.0607 3.06066L4.12132 16L17.0607 28.9393C17.6464 29.5251 17.6464 30.4749 17.0607 31.0607C16.4749 31.6464 15.5251 31.6464 14.9393 31.0607L0.93934 17.0607C0.353553 16.4749 0.353553 15.5251 0.93934 14.9393L14.9393 0.93934C15.5251 0.353553 16.4749 0.353553 17.0607 0.93934Z" fill="#A3A4F7"/>
-                        </svg>                            
-                    </button>
-                    <div class="swiper production-swiper">
+                    <div class="production__slider-top">
+                        <div class="production__slider-title">Монтаж потолка в ванной комнате 24 м<sup>2</sup></div>
+                        <div class="production__slider-arrows">
+                            <button class="production__slider-left">
+                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.94194 0.724766C7.18602 0.968843 7.18602 1.36457 6.94194 1.60865L1.55055 7.00004L6.94194 12.3914C7.18602 12.6355 7.18602 13.0312 6.94194 13.2753C6.69786 13.5194 6.30214 13.5194 6.05806 13.2753L0.224723 7.44198C0.107513 7.32477 0.0416647 7.1658 0.0416647 7.00004C0.0416647 6.83428 0.107513 6.67531 0.224723 6.5581L6.05806 0.724766C6.30214 0.480687 6.69786 0.480687 6.94194 0.724766Z" fill="#0F172A"/>
+                                </svg>                                    
+                            </button>
+                            <button class="production__slider-right">
+                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.05806 13.2752C0.813981 13.0312 0.813981 12.6354 1.05806 12.3914L6.44945 6.99996L1.05806 1.60857C0.813981 1.36449 0.813981 0.968762 1.05806 0.724684C1.30214 0.480607 1.69786 0.480607 1.94194 0.724684L7.77528 6.55802C7.89249 6.67523 7.95834 6.8342 7.95834 6.99996C7.95834 7.16572 7.89249 7.32469 7.77528 7.4419L1.94194 13.2752C1.69786 13.5193 1.30214 13.5193 1.05806 13.2752Z" fill="#0F172A"/>
+                                </svg>                                    
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper swiper-production">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
+                                    <div class="production__slide-top">
+                                        <div class="production__slide-user">
+                                            <img src="./img/avatar.png" alt="avatar">
+                                            <div>
                                                 <p>Константин К.</p>
+                                                <span>Монтажник и замерщик</span>
+                                            </div>
+                                            <div class="arrow">
+                                                <div class="arrow__body">
+                                                    <svg width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.766123 2.22226C0.155511 1.50947 0.774626 0.424071 1.69898 0.586833L30.8923 5.72727C31.8752 5.90033 32.026 7.24816 31.1058 7.63425L20.8936 11.9188C20.4757 12.0942 20.228 12.5285 20.2898 12.9774L21.8006 23.9466C21.9368 24.9353 20.6998 25.4916 20.0505 24.7336L0.766123 2.22226Z" fill="#F9C56C"/>
+                                                    </svg>
+                                                    <p>Это я сделал</p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
+                                        <div class="production__slide-price">
+                                            <p>32 440 руб</p>
+                                            <span>Стоимость натяжного потолка</span>
                                         </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
+                                    </div>
+                                    <div class="production__slide-img">
+                                        <img src="./img/production-slide.png" alt="slide">
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
+                                    <div class="production__slide-top">
+                                        <div class="production__slide-user">
+                                            <img src="./img/avatar.png" alt="avatar">
+                                            <div>
                                                 <p>Константин К.</p>
+                                                <span>Монтажник и замерщик</span>
+                                            </div>
+                                            <div class="arrow">
+                                                <div class="arrow__body">
+                                                    <svg width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.766123 2.22226C0.155511 1.50947 0.774626 0.424071 1.69898 0.586833L30.8923 5.72727C31.8752 5.90033 32.026 7.24816 31.1058 7.63425L20.8936 11.9188C20.4757 12.0942 20.228 12.5285 20.2898 12.9774L21.8006 23.9466C21.9368 24.9353 20.6998 25.4916 20.0505 24.7336L0.766123 2.22226Z" fill="#F9C56C"/>
+                                                    </svg>
+                                                    <p>Это я сделал</p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
+                                        <div class="production__slide-price">
+                                            <p>32 440 руб</p>
+                                            <span>Стоимость натяжного потолка</span>
                                         </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="production__slide">
                                     <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
-                                                <p>Константин К.</p>
-                                            </div>
-                                        </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
-                                        </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
-                                                <p>Константин К.</p>
-                                            </div>
-                                        </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
-                                        </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
-                                                <p>Константин К.</p>
-                                            </div>
-                                        </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
-                                        </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
-                                                <p>Константин К.</p>
-                                            </div>
-                                        </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
-                                        </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
+                                        <img src="./img/production-slide.png" alt="slide">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-pagination production__pagination"></div>
                     </div>
-                    <button class="production__arrow production__arrow_right">
-                        <svg width="18" height="32" viewBox="0 0 18 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.939341 31.0607C0.353555 30.4749 0.353555 29.5251 0.939341 28.9393L13.8787 16L0.93934 3.06066C0.353554 2.47487 0.353553 1.52513 0.93934 0.93934C1.52513 0.353553 2.47487 0.353553 3.06066 0.93934L17.0607 14.9393C17.342 15.2206 17.5 15.6022 17.5 16C17.5 16.3978 17.342 16.7794 17.0607 17.0607L3.06066 31.0607C2.47487 31.6464 1.52513 31.6464 0.939341 31.0607Z" fill="#A3A4F7"/>
-                        </svg>                            
-                    </button>
                 </div>
             </div>
             <div class="production__content">
                 <div class="production__slider">
-                    <button class="production__arrow production__arrow_left">
-                        <svg width="18" height="32" viewBox="0 0 18 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.0607 0.93934C17.6464 1.52513 17.6464 2.47487 17.0607 3.06066L4.12132 16L17.0607 28.9393C17.6464 29.5251 17.6464 30.4749 17.0607 31.0607C16.4749 31.6464 15.5251 31.6464 14.9393 31.0607L0.93934 17.0607C0.353553 16.4749 0.353553 15.5251 0.93934 14.9393L14.9393 0.93934C15.5251 0.353553 16.4749 0.353553 17.0607 0.93934Z" fill="#A3A4F7"/>
-                        </svg>                            
-                    </button>
-                    <div class="swiper production-swiper">
+                    <div class="production__slider-top">
+                        <div class="production__slider-title">Монтаж потолка в закусочной комнате 24 м<sup>2</sup></div>
+                        <div class="production__slider-arrows">
+                            <button class="production__slider-left">
+                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.94194 0.724766C7.18602 0.968843 7.18602 1.36457 6.94194 1.60865L1.55055 7.00004L6.94194 12.3914C7.18602 12.6355 7.18602 13.0312 6.94194 13.2753C6.69786 13.5194 6.30214 13.5194 6.05806 13.2753L0.224723 7.44198C0.107513 7.32477 0.0416647 7.1658 0.0416647 7.00004C0.0416647 6.83428 0.107513 6.67531 0.224723 6.5581L6.05806 0.724766C6.30214 0.480687 6.69786 0.480687 6.94194 0.724766Z" fill="#0F172A"/>
+                                </svg>                                    
+                            </button>
+                            <button class="production__slider-right">
+                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.05806 13.2752C0.813981 13.0312 0.813981 12.6354 1.05806 12.3914L6.44945 6.99996L1.05806 1.60857C0.813981 1.36449 0.813981 0.968762 1.05806 0.724684C1.30214 0.480607 1.69786 0.480607 1.94194 0.724684L7.77528 6.55802C7.89249 6.67523 7.95834 6.8342 7.95834 6.99996C7.95834 7.16572 7.89249 7.32469 7.77528 7.4419L1.94194 13.2752C1.69786 13.5193 1.30214 13.5193 1.05806 13.2752Z" fill="#0F172A"/>
+                                </svg>                                    
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper swiper-production">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
+                                    <div class="production__slide-top">
+                                        <div class="production__slide-user">
+                                            <img src="./img/avatar.png" alt="avatar">
+                                            <div>
                                                 <p>Константин К.</p>
+                                                <span>Монтажник и замерщик</span>
+                                            </div>
+                                            <div class="arrow">
+                                                <div class="arrow__body">
+                                                    <svg width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.766123 2.22226C0.155511 1.50947 0.774626 0.424071 1.69898 0.586833L30.8923 5.72727C31.8752 5.90033 32.026 7.24816 31.1058 7.63425L20.8936 11.9188C20.4757 12.0942 20.228 12.5285 20.2898 12.9774L21.8006 23.9466C21.9368 24.9353 20.6998 25.4916 20.0505 24.7336L0.766123 2.22226Z" fill="#F9C56C"/>
+                                                    </svg>
+                                                    <p>Это я сделал</p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
+                                        <div class="production__slide-price">
+                                            <p>32 440 руб</p>
+                                            <span>Стоимость натяжного потолка</span>
                                         </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
+                                    </div>
+                                    <div class="production__slide-img">
+                                        <img src="./img/production-slide.png" alt="slide">
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
+                                    <div class="production__slide-top">
+                                        <div class="production__slide-user">
+                                            <img src="./img/avatar.png" alt="avatar">
+                                            <div>
                                                 <p>Константин К.</p>
+                                                <span>Монтажник и замерщик</span>
+                                            </div>
+                                            <div class="arrow">
+                                                <div class="arrow__body">
+                                                    <svg width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.766123 2.22226C0.155511 1.50947 0.774626 0.424071 1.69898 0.586833L30.8923 5.72727C31.8752 5.90033 32.026 7.24816 31.1058 7.63425L20.8936 11.9188C20.4757 12.0942 20.228 12.5285 20.2898 12.9774L21.8006 23.9466C21.9368 24.9353 20.6998 25.4916 20.0505 24.7336L0.766123 2.22226Z" fill="#F9C56C"/>
+                                                    </svg>
+                                                    <p>Это я сделал</p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
+                                        <div class="production__slide-price">
+                                            <p>32 440 руб</p>
+                                            <span>Стоимость натяжного потолка</span>
                                         </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="production__slide">
                                     <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
-                                                <p>Константин К.</p>
-                                            </div>
-                                        </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
-                                        </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
-                                                <p>Константин К.</p>
-                                            </div>
-                                        </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
-                                        </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
-                                                <p>Константин К.</p>
-                                            </div>
-                                        </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
-                                        </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
-                                                <p>Константин К.</p>
-                                            </div>
-                                        </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
-                                        </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
+                                        <img src="./img/production-slide.png" alt="slide">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-pagination production__pagination"></div>
                     </div>
-                    <button class="production__arrow production__arrow_right">
-                        <svg width="18" height="32" viewBox="0 0 18 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.939341 31.0607C0.353555 30.4749 0.353555 29.5251 0.939341 28.9393L13.8787 16L0.93934 3.06066C0.353554 2.47487 0.353553 1.52513 0.93934 0.93934C1.52513 0.353553 2.47487 0.353553 3.06066 0.93934L17.0607 14.9393C17.342 15.2206 17.5 15.6022 17.5 16C17.5 16.3978 17.342 16.7794 17.0607 17.0607L3.06066 31.0607C2.47487 31.6464 1.52513 31.6464 0.939341 31.0607Z" fill="#A3A4F7"/>
-                        </svg>                            
-                    </button>
                 </div>
             </div>
             <div class="production__content">
                 <div class="production__slider">
-                    <button class="production__arrow production__arrow_left">
-                        <svg width="18" height="32" viewBox="0 0 18 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.0607 0.93934C17.6464 1.52513 17.6464 2.47487 17.0607 3.06066L4.12132 16L17.0607 28.9393C17.6464 29.5251 17.6464 30.4749 17.0607 31.0607C16.4749 31.6464 15.5251 31.6464 14.9393 31.0607L0.93934 17.0607C0.353553 16.4749 0.353553 15.5251 0.93934 14.9393L14.9393 0.93934C15.5251 0.353553 16.4749 0.353553 17.0607 0.93934Z" fill="#A3A4F7"/>
-                        </svg>                            
-                    </button>
-                    <div class="swiper production-swiper">
+                    <div class="production__slider-top">
+                        <div class="production__slider-title">Монтаж потолка в спальной комнате 24 м<sup>2</sup></div>
+                        <div class="production__slider-arrows">
+                            <button class="production__slider-left">
+                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.94194 0.724766C7.18602 0.968843 7.18602 1.36457 6.94194 1.60865L1.55055 7.00004L6.94194 12.3914C7.18602 12.6355 7.18602 13.0312 6.94194 13.2753C6.69786 13.5194 6.30214 13.5194 6.05806 13.2753L0.224723 7.44198C0.107513 7.32477 0.0416647 7.1658 0.0416647 7.00004C0.0416647 6.83428 0.107513 6.67531 0.224723 6.5581L6.05806 0.724766C6.30214 0.480687 6.69786 0.480687 6.94194 0.724766Z" fill="#0F172A"/>
+                                </svg>                                    
+                            </button>
+                            <button class="production__slider-right">
+                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.05806 13.2752C0.813981 13.0312 0.813981 12.6354 1.05806 12.3914L6.44945 6.99996L1.05806 1.60857C0.813981 1.36449 0.813981 0.968762 1.05806 0.724684C1.30214 0.480607 1.69786 0.480607 1.94194 0.724684L7.77528 6.55802C7.89249 6.67523 7.95834 6.8342 7.95834 6.99996C7.95834 7.16572 7.89249 7.32469 7.77528 7.4419L1.94194 13.2752C1.69786 13.5193 1.30214 13.5193 1.05806 13.2752Z" fill="#0F172A"/>
+                                </svg>                                    
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper swiper-production">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
+                                    <div class="production__slide-top">
+                                        <div class="production__slide-user">
+                                            <img src="./img/avatar.png" alt="avatar">
+                                            <div>
                                                 <p>Константин К.</p>
+                                                <span>Монтажник и замерщик</span>
+                                            </div>
+                                            <div class="arrow">
+                                                <div class="arrow__body">
+                                                    <svg width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.766123 2.22226C0.155511 1.50947 0.774626 0.424071 1.69898 0.586833L30.8923 5.72727C31.8752 5.90033 32.026 7.24816 31.1058 7.63425L20.8936 11.9188C20.4757 12.0942 20.228 12.5285 20.2898 12.9774L21.8006 23.9466C21.9368 24.9353 20.6998 25.4916 20.0505 24.7336L0.766123 2.22226Z" fill="#F9C56C"/>
+                                                    </svg>
+                                                    <p>Это я сделал</p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
+                                        <div class="production__slide-price">
+                                            <p>32 440 руб</p>
+                                            <span>Стоимость натяжного потолка</span>
                                         </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
+                                    </div>
+                                    <div class="production__slide-img">
+                                        <img src="./img/production-slide.png" alt="slide">
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
+                                    <div class="production__slide-top">
+                                        <div class="production__slide-user">
+                                            <img src="./img/avatar.png" alt="avatar">
+                                            <div>
                                                 <p>Константин К.</p>
+                                                <span>Монтажник и замерщик</span>
+                                            </div>
+                                            <div class="arrow">
+                                                <div class="arrow__body">
+                                                    <svg width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.766123 2.22226C0.155511 1.50947 0.774626 0.424071 1.69898 0.586833L30.8923 5.72727C31.8752 5.90033 32.026 7.24816 31.1058 7.63425L20.8936 11.9188C20.4757 12.0942 20.228 12.5285 20.2898 12.9774L21.8006 23.9466C21.9368 24.9353 20.6998 25.4916 20.0505 24.7336L0.766123 2.22226Z" fill="#F9C56C"/>
+                                                    </svg>
+                                                    <p>Это я сделал</p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
+                                        <div class="production__slide-price">
+                                            <p>32 440 руб</p>
+                                            <span>Стоимость натяжного потолка</span>
                                         </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="production__slide">
                                     <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
-                                                <p>Константин К.</p>
-                                            </div>
-                                        </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
-                                        </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
-                                                <p>Константин К.</p>
-                                            </div>
-                                        </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
-                                        </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
-                                                <p>Константин К.</p>
-                                            </div>
-                                        </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
-                                        </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
-                                                <p>Константин К.</p>
-                                            </div>
-                                        </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
-                                        </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
+                                        <img src="./img/production-slide.png" alt="slide">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-pagination production__pagination"></div>
                     </div>
-                    <button class="production__arrow production__arrow_right">
-                        <svg width="18" height="32" viewBox="0 0 18 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.939341 31.0607C0.353555 30.4749 0.353555 29.5251 0.939341 28.9393L13.8787 16L0.93934 3.06066C0.353554 2.47487 0.353553 1.52513 0.93934 0.93934C1.52513 0.353553 2.47487 0.353553 3.06066 0.93934L17.0607 14.9393C17.342 15.2206 17.5 15.6022 17.5 16C17.5 16.3978 17.342 16.7794 17.0607 17.0607L3.06066 31.0607C2.47487 31.6464 1.52513 31.6464 0.939341 31.0607Z" fill="#A3A4F7"/>
-                        </svg>                            
-                    </button>
                 </div>
             </div>
             <div class="production__content">
                 <div class="production__slider">
-                    <button class="production__arrow production__arrow_left">
-                        <svg width="18" height="32" viewBox="0 0 18 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.0607 0.93934C17.6464 1.52513 17.6464 2.47487 17.0607 3.06066L4.12132 16L17.0607 28.9393C17.6464 29.5251 17.6464 30.4749 17.0607 31.0607C16.4749 31.6464 15.5251 31.6464 14.9393 31.0607L0.93934 17.0607C0.353553 16.4749 0.353553 15.5251 0.93934 14.9393L14.9393 0.93934C15.5251 0.353553 16.4749 0.353553 17.0607 0.93934Z" fill="#A3A4F7"/>
-                        </svg>                            
-                    </button>
-                    <div class="swiper production-swiper">
+                    <div class="production__slider-top">
+                        <div class="production__slider-title">Монтаж потолка в джакузи комнате 24 м<sup>2</sup></div>
+                        <div class="production__slider-arrows">
+                            <button class="production__slider-left">
+                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.94194 0.724766C7.18602 0.968843 7.18602 1.36457 6.94194 1.60865L1.55055 7.00004L6.94194 12.3914C7.18602 12.6355 7.18602 13.0312 6.94194 13.2753C6.69786 13.5194 6.30214 13.5194 6.05806 13.2753L0.224723 7.44198C0.107513 7.32477 0.0416647 7.1658 0.0416647 7.00004C0.0416647 6.83428 0.107513 6.67531 0.224723 6.5581L6.05806 0.724766C6.30214 0.480687 6.69786 0.480687 6.94194 0.724766Z" fill="#0F172A"/>
+                                </svg>                                    
+                            </button>
+                            <button class="production__slider-right">
+                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.05806 13.2752C0.813981 13.0312 0.813981 12.6354 1.05806 12.3914L6.44945 6.99996L1.05806 1.60857C0.813981 1.36449 0.813981 0.968762 1.05806 0.724684C1.30214 0.480607 1.69786 0.480607 1.94194 0.724684L7.77528 6.55802C7.89249 6.67523 7.95834 6.8342 7.95834 6.99996C7.95834 7.16572 7.89249 7.32469 7.77528 7.4419L1.94194 13.2752C1.69786 13.5193 1.30214 13.5193 1.05806 13.2752Z" fill="#0F172A"/>
+                                </svg>                                    
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper swiper-production">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
+                                    <div class="production__slide-top">
+                                        <div class="production__slide-user">
+                                            <img src="./img/avatar.png" alt="avatar">
+                                            <div>
                                                 <p>Константин К.</p>
+                                                <span>Монтажник и замерщик</span>
+                                            </div>
+                                            <div class="arrow">
+                                                <div class="arrow__body">
+                                                    <svg width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.766123 2.22226C0.155511 1.50947 0.774626 0.424071 1.69898 0.586833L30.8923 5.72727C31.8752 5.90033 32.026 7.24816 31.1058 7.63425L20.8936 11.9188C20.4757 12.0942 20.228 12.5285 20.2898 12.9774L21.8006 23.9466C21.9368 24.9353 20.6998 25.4916 20.0505 24.7336L0.766123 2.22226Z" fill="#F9C56C"/>
+                                                    </svg>
+                                                    <p>Это я сделал</p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
+                                        <div class="production__slide-price">
+                                            <p>32 440 руб</p>
+                                            <span>Стоимость натяжного потолка</span>
                                         </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
+                                    </div>
+                                    <div class="production__slide-img">
+                                        <img src="./img/production-slide.png" alt="slide">
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
+                                    <div class="production__slide-top">
+                                        <div class="production__slide-user">
+                                            <img src="./img/avatar.png" alt="avatar">
+                                            <div>
                                                 <p>Константин К.</p>
+                                                <span>Монтажник и замерщик</span>
+                                            </div>
+                                            <div class="arrow">
+                                                <div class="arrow__body">
+                                                    <svg width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.766123 2.22226C0.155511 1.50947 0.774626 0.424071 1.69898 0.586833L30.8923 5.72727C31.8752 5.90033 32.026 7.24816 31.1058 7.63425L20.8936 11.9188C20.4757 12.0942 20.228 12.5285 20.2898 12.9774L21.8006 23.9466C21.9368 24.9353 20.6998 25.4916 20.0505 24.7336L0.766123 2.22226Z" fill="#F9C56C"/>
+                                                    </svg>
+                                                    <p>Это я сделал</p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
+                                        <div class="production__slide-price">
+                                            <p>32 440 руб</p>
+                                            <span>Стоимость натяжного потолка</span>
                                         </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="production__slide">
                                     <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
-                                                <p>Константин К.</p>
-                                            </div>
-                                        </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
-                                        </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
-                                                <p>Константин К.</p>
-                                            </div>
-                                        </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
-                                        </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
-                                                <p>Константин К.</p>
-                                            </div>
-                                        </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
-                                        </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
-                                                <p>Константин К.</p>
-                                            </div>
-                                        </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
-                                        </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
+                                        <img src="./img/production-slide.png" alt="slide">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-pagination production__pagination"></div>
                     </div>
-                    <button class="production__arrow production__arrow_right">
-                        <svg width="18" height="32" viewBox="0 0 18 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.939341 31.0607C0.353555 30.4749 0.353555 29.5251 0.939341 28.9393L13.8787 16L0.93934 3.06066C0.353554 2.47487 0.353553 1.52513 0.93934 0.93934C1.52513 0.353553 2.47487 0.353553 3.06066 0.93934L17.0607 14.9393C17.342 15.2206 17.5 15.6022 17.5 16C17.5 16.3978 17.342 16.7794 17.0607 17.0607L3.06066 31.0607C2.47487 31.6464 1.52513 31.6464 0.939341 31.0607Z" fill="#A3A4F7"/>
-                        </svg>                            
-                    </button>
                 </div>
             </div>
             <div class="production__content">
                 <div class="production__slider">
-                    <button class="production__arrow production__arrow_left">
-                        <svg width="18" height="32" viewBox="0 0 18 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.0607 0.93934C17.6464 1.52513 17.6464 2.47487 17.0607 3.06066L4.12132 16L17.0607 28.9393C17.6464 29.5251 17.6464 30.4749 17.0607 31.0607C16.4749 31.6464 15.5251 31.6464 14.9393 31.0607L0.93934 17.0607C0.353553 16.4749 0.353553 15.5251 0.93934 14.9393L14.9393 0.93934C15.5251 0.353553 16.4749 0.353553 17.0607 0.93934Z" fill="#A3A4F7"/>
-                        </svg>                            
-                    </button>
-                    <div class="swiper production-swiper">
+                    <div class="production__slider-top">
+                        <div class="production__slider-title">Монтаж потолка в шашлычной комнате 24 м<sup>2</sup></div>
+                        <div class="production__slider-arrows">
+                            <button class="production__slider-left">
+                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.94194 0.724766C7.18602 0.968843 7.18602 1.36457 6.94194 1.60865L1.55055 7.00004L6.94194 12.3914C7.18602 12.6355 7.18602 13.0312 6.94194 13.2753C6.69786 13.5194 6.30214 13.5194 6.05806 13.2753L0.224723 7.44198C0.107513 7.32477 0.0416647 7.1658 0.0416647 7.00004C0.0416647 6.83428 0.107513 6.67531 0.224723 6.5581L6.05806 0.724766C6.30214 0.480687 6.69786 0.480687 6.94194 0.724766Z" fill="#0F172A"/>
+                                </svg>                                    
+                            </button>
+                            <button class="production__slider-right">
+                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.05806 13.2752C0.813981 13.0312 0.813981 12.6354 1.05806 12.3914L6.44945 6.99996L1.05806 1.60857C0.813981 1.36449 0.813981 0.968762 1.05806 0.724684C1.30214 0.480607 1.69786 0.480607 1.94194 0.724684L7.77528 6.55802C7.89249 6.67523 7.95834 6.8342 7.95834 6.99996C7.95834 7.16572 7.89249 7.32469 7.77528 7.4419L1.94194 13.2752C1.69786 13.5193 1.30214 13.5193 1.05806 13.2752Z" fill="#0F172A"/>
+                                </svg>                                    
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper swiper-production">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
+                                    <div class="production__slide-top">
+                                        <div class="production__slide-user">
+                                            <img src="./img/avatar.png" alt="avatar">
+                                            <div>
                                                 <p>Константин К.</p>
+                                                <span>Монтажник и замерщик</span>
+                                            </div>
+                                            <div class="arrow">
+                                                <div class="arrow__body">
+                                                    <svg width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.766123 2.22226C0.155511 1.50947 0.774626 0.424071 1.69898 0.586833L30.8923 5.72727C31.8752 5.90033 32.026 7.24816 31.1058 7.63425L20.8936 11.9188C20.4757 12.0942 20.228 12.5285 20.2898 12.9774L21.8006 23.9466C21.9368 24.9353 20.6998 25.4916 20.0505 24.7336L0.766123 2.22226Z" fill="#F9C56C"/>
+                                                    </svg>
+                                                    <p>Это я сделал</p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
+                                        <div class="production__slide-price">
+                                            <p>32 440 руб</p>
+                                            <span>Стоимость натяжного потолка</span>
                                         </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
+                                    </div>
+                                    <div class="production__slide-img">
+                                        <img src="./img/production-slide.png" alt="slide">
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
+                                    <div class="production__slide-top">
+                                        <div class="production__slide-user">
+                                            <img src="./img/avatar.png" alt="avatar">
+                                            <div>
                                                 <p>Константин К.</p>
+                                                <span>Монтажник и замерщик</span>
+                                            </div>
+                                            <div class="arrow">
+                                                <div class="arrow__body">
+                                                    <svg width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.766123 2.22226C0.155511 1.50947 0.774626 0.424071 1.69898 0.586833L30.8923 5.72727C31.8752 5.90033 32.026 7.24816 31.1058 7.63425L20.8936 11.9188C20.4757 12.0942 20.228 12.5285 20.2898 12.9774L21.8006 23.9466C21.9368 24.9353 20.6998 25.4916 20.0505 24.7336L0.766123 2.22226Z" fill="#F9C56C"/>
+                                                    </svg>
+                                                    <p>Это я сделал</p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
+                                        <div class="production__slide-price">
+                                            <p>32 440 руб</p>
+                                            <span>Стоимость натяжного потолка</span>
                                         </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="production__slide">
                                     <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
-                                                <p>Константин К.</p>
-                                            </div>
-                                        </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
-                                        </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
-                                                <p>Константин К.</p>
-                                            </div>
-                                        </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
-                                        </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
-                                                <p>Константин К.</p>
-                                            </div>
-                                        </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
-                                        </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="production__slide">
-                                    <div class="production__slide-img">
-                                        <div class="image-compare">
-                                            <img src="./img/before.png" alt="before"/>
-                                            <img src="./img/after.jpg" alt="after" />
-                                        </div>
-                                    </div>
-                                    <div class="production__slide-description">
-                                        <div class="production__slide-title">Монтаж потолка в гостиной комнате 24 м<sup>2</sup></div>
-                                        <div class="production__slide-time">
-                                            <p class="text">Дата: 20.03.2023</p>
-                                            <p class="text">Монтаж:</p>
-                                            <div class="user">
-                                                <img src="./img/avatar.png" alt="avatar">
-                                                <p>Константин К.</p>
-                                            </div>
-                                        </div>
-                                        <div class="production__slide-address">
-                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 6C12 9.31371 9.31371 14 6 14C2.68629 14 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6Z" fill="#6567F2"/>
-                                                <circle cx="6" cy="6" r="2" fill="white"/>
-                                            </svg>                                                
-                                            <p>Россия, г. Магнитогорск, Заслонова ул.</p>
-                                        </div>
-                                        <div class="production__slide-label">Состав работ:</div>
-                                        <ul class="production__slide-list">
-                                            <li class="production__slide-item">
-                                                <p>Монтаж полотна 24 м2</p>
-                                                <p>30 000 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж углов, 8 шт</p>
-                                                <p>200 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Установка 4 светильников</p>
-                                                <p>300 руб</p>
-                                            </li>
-                                            <li class="production__slide-item">
-                                                <p>Монтаж </p>
-                                                <p>Бесплатно</p>
-                                            </li>
-                                        </ul>
-                                        <p class="production__slide-price">
-                                            Стоимость под ключ: <span>30 500 руб</span>
-                                        </p>
-                                        <a href="#" class="production__slide-button btn-blue" toggle="#modal-callback">Хочу так же</a>
+                                        <img src="./img/production-slide.png" alt="slide">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-pagination production__pagination"></div>
                     </div>
-                    <button class="production__arrow production__arrow_right">
-                        <svg width="18" height="32" viewBox="0 0 18 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.939341 31.0607C0.353555 30.4749 0.353555 29.5251 0.939341 28.9393L13.8787 16L0.93934 3.06066C0.353554 2.47487 0.353553 1.52513 0.93934 0.93934C1.52513 0.353553 2.47487 0.353553 3.06066 0.93934L17.0607 14.9393C17.342 15.2206 17.5 15.6022 17.5 16C17.5 16.3978 17.342 16.7794 17.0607 17.0607L3.06066 31.0607C2.47487 31.6464 1.52513 31.6464 0.939341 31.0607Z" fill="#A3A4F7"/>
-                        </svg>                            
-                    </button>
                 </div>
             </div>
         </div>

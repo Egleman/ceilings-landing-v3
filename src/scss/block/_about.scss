@@ -1,0 +1,116 @@
+.about {
+    padding: 72px 0px 36px 0px;
+    &__suptitle {
+        font-size: 24px;
+        line-height: 110%;
+        color: #F7B23B;
+        margin-bottom: 16px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 40px;
+    }
+    &__title {
+        max-width: 610px;
+        width: 100%;
+    }
+    &__description {
+        font-size: 20px;
+        line-height: 130%;
+        color: #334155;
+        max-width: 360px;
+        width: 100%;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+    &__card {
+        padding: 40px 16px 16px 16px;
+        background: #F1F5F9;
+        border-radius: 12px;
+        &-body {
+            background: #FFFFFF;
+            border-radius: 8px;
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            box-sizing: border-box;
+        }
+        &-title {
+            font-size: 16px;
+            line-height: 130%;
+            color: #36C5DE;
+            margin-bottom: 24px;
+        }
+        &-description {
+            font-size: 16px;
+            line-height: 130%;
+            color: #334155;
+            margin-bottom: 24px;
+        }
+        &-link {
+            background: #FFFFFF;
+            border: 1px solid #CBD5E1;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 32px;
+            max-width: 165px;
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: -0.03em;
+            color: #0F172A;
+            gap: 6px;
+        }
+    }
+}
+
+@media (max-width: 1022px) {
+    .about {
+        &__description {
+            display: none;
+        }
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 20px;
+            row-gap: 24px;
+        }
+    }
+}
+@media (max-width: 606px) {
+    .about {
+        padding: 48px 0px 24px 0px;
+        &__suptitle {
+            margin-bottom: 8px;
+        }
+        &__wrapper {
+            flex-direction: column;
+            margin-bottom: 24px;
+        }
+        &__title {
+            margin-bottom: 48px;
+        }
+        &__description {
+            display: block;
+            font-size: 20px;
+            max-width: 100%;
+        }
+        &__grid {
+            max-width: 430px;
+            width: 100%;
+            margin: 0 auto;
+            grid-template-columns: 1fr;
+            column-gap: 0px;
+            row-gap: 12px;
+        }
+    }
+}

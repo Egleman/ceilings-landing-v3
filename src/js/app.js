@@ -17,6 +17,7 @@ flsFunction.presentation();
 flsFunction.scrollButtons();
 flsFunction.openModal();
 flsFunction.hiddenAdv();
+flsFunction.photosSlider();
 
 let im = new Inputmask({
     mask: '8 (999) 999-99-99',
