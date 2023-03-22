@@ -130,6 +130,11 @@
             font-size: 16px;
             line-height: 150%;
             color: #344256;
+            transition: .3s all;
+            cursor: pointer;
+            &:hover {
+                color: #04B7D6;
+            }
         }
     }
     &__price {

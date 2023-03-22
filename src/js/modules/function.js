@@ -3297,6 +3297,7 @@ export const openHiddenMenu = () => {
 export const rangeSlider = () => {
     const sliders = document.querySelectorAll('.slider-styled');
     const numb = document.querySelectorAll('.banner__range-count');
+    const steps = document.querySelectorAll('.banner__steps');
     // console.log(numb)
     sliders.forEach((slider, index) => {
         noUiSlider.create(slider, { 
@@ -3312,6 +3313,12 @@ export const rangeSlider = () => {
         slider.noUiSlider.on('update', function (values, handle) {
             numb[index].value = `${Math.round(values[handle])} м²`;
         });
+        steps[index].addEventListener('click', (e) => {
+            if (e.target.closest('p')) {
+                slider.noUiSlider.set(e.target.closest('p').textContent.trim().slice(0, -3));
+                
+            }
+        })
     })
 }
 
@@ -3375,25 +3382,25 @@ export const customSelect = () => {
     //     })
     // })
 
-    value2.addEventListener('click', () => {
-        list2.classList.toggle('active');
-        value2.classList.toggle('active');
-    })
-    clickOutside(value2, function (e) {
-        if (list2.classList.contains('active')) {
-            list2.classList.remove('active');
-        }
-        if (value2.classList.contains('active')) {
-            value2.classList.remove('active');
-        }
-    });
-    options2.forEach(option => {
-        option.addEventListener('click', (e) => {
-            e.preventDefault();
-            const span = option.querySelector('p');
-            document.querySelector('.calc__value > p > span').textContent = span.textContent
-        })
-    })
+    // value2.addEventListener('click', () => {
+    //     list2.classList.toggle('active');
+    //     value2.classList.toggle('active');
+    // })
+    // clickOutside(value2, function (e) {
+    //     if (list2.classList.contains('active')) {
+    //         list2.classList.remove('active');
+    //     }
+    //     if (value2.classList.contains('active')) {
+    //         value2.classList.remove('active');
+    //     }
+    // });
+    // options2.forEach(option => {
+    //     option.addEventListener('click', (e) => {
+    //         e.preventDefault();
+    //         const span = option.querySelector('p');
+    //         document.querySelector('.calc__value > p > span').textContent = span.textContent
+    //     })
+    // })
 }
 
 export const beforAfter = () => {
@@ -3401,7 +3408,7 @@ export const beforAfter = () => {
     const tabs = document.querySelectorAll('.production__tabs-link');
     const tabsPanel = document.querySelector('.production__tabs');
     const contentList = document.querySelectorAll('.production__content');
-    const swipersList = document.querySelectorAll('.production-swiper');
+    const swipersList = document.querySelectorAll('.swiper-production');
 
     tabsPanel.addEventListener('click', (e) => {
         e.preventDefault();
@@ -3446,9 +3453,9 @@ export const beforAfter = () => {
     });
     swipersList.forEach((swiper, index) => {
         swiper.classList.add(`production-swiper-${index}`);
-        document.querySelectorAll('.production__arrow_right')[index].classList.add(`prod-right-${index}`);
-        document.querySelectorAll('.production__arrow_left')[index].classList.add(`prod-left-${index}`);
-        document.querySelectorAll('.production__pagination')[index].classList.add(`production__pagination_${index}`)
+        document.querySelectorAll('.production__slider-right')[index].classList.add(`prod-right-${index}`);
+        document.querySelectorAll('.production__slider-left')[index].classList.add(`prod-left-${index}`);
+        // document.querySelectorAll('.production__pagination')[index].classList.add(`production__pagination_${index}`)
         const slider = new Swiper(`.production-swiper-${index}`, {
             modules: [Navigation, Pagination],
             // loop: true,
@@ -3461,10 +3468,10 @@ export const beforAfter = () => {
                 nextEl: `.prod-right-${index}`,
                 prevEl: `.prod-left-${index}`,
             },
-            pagination: {
-                el: `.production__pagination_${index}`,
-                clickable: true
-            },
+            // pagination: {
+            //     el: `.production__pagination_${index}`,
+            //     clickable: true
+            // },
             // breakpoints: {
             //     0: {
             //         slidesPerView: 3,
@@ -3479,103 +3486,22 @@ export const beforAfter = () => {
 }
 
 export const calc = () => {
-    const calcSteps = document.querySelectorAll('.calc__step');
-    const nextBtn = document.querySelectorAll('[calc-next]');
-    const prevBtn = document.querySelectorAll('[calc-prev]');
-    const counterWrappers = document.querySelectorAll('.calc__counters-wr');
-    const calcSubmitBtn = document.querySelector('.calc__form button');
-    const calcImages = document.querySelectorAll('.calc__location .grid');
-    const inputFirst = calcImages[0].querySelectorAll('input')
-    const arrCounters = [0, 0, 0, 0];
-
-    inputFirst[0].addEventListener('input', (e) => {
-        if (e.target.checked) {
-            inputFirst.forEach((input, index) => {
-                if (index !== 0) {
-                    input.checked = true;
-                }
-            })
-        } else {
-            inputFirst.forEach((input, index) => {
-                if (index !== 0) {
-                    input.checked = false;
-                }
-            })
-        }
-    })
-
-    inputFirst.forEach((input, index) => {
-        if (index !== 0) {
-            input.addEventListener('input', (e) => {
-                if (e.target.checked) {
-                    return;
-                } else {
-                    if (inputFirst[0].checked) {
-                        inputFirst[0].checked = false
-                    }
-                }
-            })
-        }
-    })
-
-    const checkArr = () => {
-        if (arrCounters.every(elem => elem === 0)) {
-            calcSubmitBtn.classList.add('disabled');
-        } else {
-            if (calcSubmitBtn.classList.contains('disabled')) {
-                calcSubmitBtn.classList.remove('disabled');
+    const selects = document.querySelectorAll('.calc__value');
+    const options = document.querySelectorAll('.calc__options');
+    selects.forEach((select, index) => {
+        select.addEventListener('click', () => {
+            options[index].classList.toggle('active');
+        })
+        clickOutside(select, function (e) {
+            if (options[index].classList.contains('active')) {
+                options[index].classList.remove('active');
             }
-        }
-    }
-
-    counterWrappers.forEach((panel, index) => {
-        const minus = panel.querySelector('button[data-calc="minus"]');
-        const plus = panel.querySelector('button[data-calc="plus"');
-        const input = panel.querySelector('input');
-        let counter = 0;
-        minus.addEventListener('click', () => {
-            if (counter !== 0) {
-                counter--;
-                arrCounters[index] = counter;
-                input.value = counter;
-                checkArr();
+        });
+        options[index].addEventListener('click', (e) => {
+            if (e.target.closest('p')) {
+                const text = e.target.closest('p');
+                select.querySelector('.value').textContent = text.textContent;
             }
-        })
-        plus.addEventListener('click',  () => {
-            counter++;
-            arrCounters[index] = counter;
-            input.value = counter;
-            checkArr();
-        })
-    })
-
-    nextBtn.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.preventDefault();
-            calcSteps.forEach((step, index) => {
-                if (index === +btn.dataset.id) {
-                    step.classList.add('active');
-                } else {
-                    if (step.classList.contains('active')) {
-                        step.classList.remove('active')
-                    }
-                }
-            })
-        })
-    })
-    prevBtn.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.preventDefault();
-            
-            calcSteps.forEach((step, index) => {
-                if (index === +btn.dataset.id) {
-                    step.classList.add('active');
-                } else {
-                    if (step.classList.contains('active')) {
-                        step.classList.remove('active')
-                    }
-                }
-            })
         })
     })
 }

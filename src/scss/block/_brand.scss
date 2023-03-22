@@ -1,0 +1,37 @@
+.brand {
+    padding: 36px 0px 36px 0px;
+    background: #F1F5F9;
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 15px;
+    }
+    &__card {
+        height: 48px;
+        picture {
+            height: 100%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+
+@media (max-width: 500px) {
+    .brand {
+        &__grid {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+    }
+}
+@media (max-width: 375px) {
+    .brand {
+        &__card {
+            height: 35px;
+        }
+    }
+}
