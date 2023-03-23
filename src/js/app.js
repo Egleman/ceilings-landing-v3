@@ -18,6 +18,7 @@ flsFunction.scrollButtons();
 flsFunction.openModal();
 flsFunction.hiddenAdv();
 flsFunction.photosSlider();
+flsFunction.reviewsSlider();
 
 let im = new Inputmask({
     mask: '8 (999) 999-99-99',
@@ -26,8 +27,18 @@ let im = new Inputmask({
     jitMasking: true,
     inputmode: 'tel'
 });
+let im2 = new Inputmask({
+  mask: '(999) 999-99-99',
+  showMaskOnHover: false,
+  showMaskOnFocus: false,
+  jitMasking: true,
+  inputmode: 'tel'
+});
 document.querySelectorAll('.masked').forEach(input => {
     im.mask(input);
+})
+document.querySelectorAll('.masked-2').forEach(input => {
+  im2.mask(input);
 })
 
 

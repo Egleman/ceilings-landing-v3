@@ -16,6 +16,9 @@
 @import './block/brand';
 @import './block/sales';
 @import './block/options';
+@import './block/callback';
+@import './block/free';
+@import './block/reviews';
 
 @import './block/video';
 @import './block/plan-pay';
@@ -29,5 +32,7 @@
 @import './block/bottom-nav';
 @import './block/footer';
 
+
+@import './block/ceilings';
 @import '../../node_modules/swiper/swiper';
 @import '../../node_modules/nouislider/dist/nouislider.css';

@@ -3564,3 +3564,28 @@ export const photosSlider = () => {
         }
     });
 }
+
+export const reviewsSlider = () => {
+    const slider = new Swiper(`.swiper-reviews`, {
+        modules: [Navigation],
+        // loop: true,
+        spaceBetween: 28,
+        slidesPerView: 2,
+        allowTouchMove: false,
+        // freeMode: true,
+        // watchSlidesProgress: true,
+        navigation: {
+            nextEl: `.reviews-right`,
+            prevEl: `.reviews-left`,
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            798: {
+                slidesPerView: 2,
+                spaceBetween: 28,
+            }
+        }
+    });
+}

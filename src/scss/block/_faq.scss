@@ -1,11 +1,38 @@
 .faq {
-    padding: 36px 0px;
+    padding: 72px 0px 36px 0px;
+    &__wrapper {
+        background: #1A1A1A;
+        border-radius: 12px;
+        padding: 36px;
+    }
     &__title {
         margin-bottom: 40px;
+        color: #FFFFFF;
+    }
+    &__more {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        height: 48px;
+        margin-bottom: 46px;
     }
 }
 @media (max-width: 606px) {
     .faq {
-        padding: 24px 0px;
+        padding: 48px 0px 24px 0px;
+        &__more {
+            margin-bottom: 0px;
+        }
+        &__title {
+            margin-bottom: 24px;
+        }
+    }
+}
+@media (max-width: 475px) {
+    .faq {
+        &__wrapper {
+            padding: 16px;
+        }
     }
 }
