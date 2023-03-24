@@ -3298,6 +3298,7 @@ export const rangeSlider = () => {
     const sliders = document.querySelectorAll('.slider-styled');
     const numb = document.querySelectorAll('.banner__range-count');
     const steps = document.querySelectorAll('.banner__steps');
+    const inputs = document.querySelectorAll('.banner__range > input');
     // console.log(numb)
     sliders.forEach((slider, index) => {
         noUiSlider.create(slider, { 
@@ -3319,12 +3320,20 @@ export const rangeSlider = () => {
                 
             }
         })
+        inputs[index].addEventListener('input', () => {
+            inputs[index].value = inputs[index].value.replace(/[^\d.]/g, ``);
+        })
+        inputs[index].addEventListener('change', () => {
+            slider.noUiSlider.set(inputs[index].value);
+        })
+        
     })
 }
 
 export const scrollButtons = () => {
     const scrollLinks = document.querySelectorAll('[scroll]');
     const hiddenMenu = document.getElementById('hidden-menu');
+    const header = document.querySelector('.header')
     scrollLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
@@ -3332,6 +3341,13 @@ export const scrollButtons = () => {
             if (hiddenMenu.classList.contains('active')) {
                 hiddenMenu.classList.remove('active');
             }
+            document.querySelectorAll('.anchor').forEach(anchor => {
+                anchor.style.height = getComputedStyle(header).height
+            })
+            // if (getComputedStyle(document.querySelector('.header__adv')).display === 'none') {
+                
+            // }
+            
             document.querySelector(blockId).scrollIntoView({
                 behavior: 'smooth',
                 block: 'start' 
@@ -3488,6 +3504,8 @@ export const beforAfter = () => {
 export const calc = () => {
     const selects = document.querySelectorAll('.calc__value');
     const options = document.querySelectorAll('.calc__options');
+    
+
     selects.forEach((select, index) => {
         select.addEventListener('click', () => {
             options[index].classList.toggle('active');
@@ -3500,6 +3518,8 @@ export const calc = () => {
         options[index].addEventListener('click', (e) => {
             if (e.target.closest('p')) {
                 const text = e.target.closest('p');
+                if (text.dataset.price !== undefined) {
+                }
                 select.querySelector('.value').textContent = text.textContent;
             }
         })
@@ -3588,4 +3608,215 @@ export const reviewsSlider = () => {
             }
         }
     });
+}
+
+export const submitForms = () => {
+    const form_1 = document.querySelector('[data-form="outside"]');
+    const form_2 = document.querySelector('[data-form="outside-2"]');
+    const form_3 = document.querySelector('[data-form="outside-3"]');
+    const form_4 = document.querySelector('[data-form="outside-4"]');
+    const form_5 = document.querySelectorAll('[data-form="modal-form"]');
+    form_1.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const input = form_1.querySelector('input');
+        if (input.value === '') {
+            form_1.classList.add('error');
+            setTimeout(() => {
+                if (form_1.classList.contains('error')) {
+                    form_1.classList.remove('error')
+                }
+            }, 5000)
+        } else {
+            input.value = '';
+            document.querySelector('#modal-thx').classList.add('active');
+        }
+        input.addEventListener('focus', () => {
+            if (form_1.classList.contains('error')) {
+                form_1.classList.remove('error')
+            }
+        })
+    });
+    form_2.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const inputwr = form_2.querySelector('.calc__form-input');
+        const input = form_2.querySelector('input');
+        if (input.value === '') {
+            inputwr.classList.add('error');
+            setTimeout(() => {
+                if (inputwr.classList.contains('error')) {
+                    inputwr.classList.remove('error')
+                }
+            }, 5000)
+        } else {
+            input.value = '';
+            document.querySelector('#modal-thx').classList.add('active');
+        }
+        input.addEventListener('focus', () => {
+            if (inputwr.classList.contains('error')) {
+                inputwr.classList.remove('error')
+            }
+        })
+    });
+    form_3.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const inputwr = form_3.querySelector('.free__form-input');
+        const input = form_3.querySelector('input');
+        if (input.value === '') {
+            inputwr.classList.add('error');
+            setTimeout(() => {
+                if (inputwr.classList.contains('error')) {
+                    inputwr.classList.remove('error')
+                }
+            }, 5000)
+        } else {
+            input.value = '';
+            document.querySelector('#modal-thx').classList.add('active');
+        }
+        input.addEventListener('focus', () => {
+            if (inputwr.classList.contains('error')) {
+                inputwr.classList.remove('error')
+            }
+        })
+    })
+    form_4.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const inputwr = form_4.querySelector('.contacts__form-input');
+        const inputs = form_4.querySelectorAll('input');
+        const label = form_4.querySelector('label');
+        const labelCheckbox = form_4.querySelector('label > div');
+        const labelText = form_4.querySelector('label > p');
+        const arrayOfTrue = [];
+        inputs.forEach((input, index) => {
+            if (index !== 1 && index !== 3) {
+                if (input.value === '') {
+                    input.classList.add('error');
+                    arrayOfTrue.push(0)
+                    setTimeout(() => {
+                        if (input.classList.contains('error')) {
+                            input.classList.remove('error')
+                        }
+                    }, 5000);
+                } else {
+                    arrayOfTrue.push(1)
+                }
+                input.addEventListener('focus', () => {
+                    if (input.classList.contains('error')) {
+                        input.classList.remove('error')
+                    }
+                })
+            } else if (index === 1) {
+                if (input.value === '') {
+                    inputwr.classList.add('error');
+                    arrayOfTrue.push(0)
+                    setTimeout(() => {
+                        if (inputwr.classList.contains('error')) {
+                            inputwr.classList.remove('error')
+                        }
+                    }, 5000)
+                } else {
+                    arrayOfTrue.push(1)
+                }
+                input.addEventListener('focus', () => {
+                    if (inputwr.classList.contains('error')) {
+                        inputwr.classList.remove('error')
+                    }
+                })
+            } else {
+                if (!input.checked) {
+                    labelCheckbox.classList.add('error');
+                    labelText.style.color = '#F87272';
+                    arrayOfTrue.push(0)
+                    setTimeout(() => {
+                        if (labelCheckbox.classList.contains('error')) {
+                            labelCheckbox.classList.remove('error');
+                            labelText.style.color = '#94a3b8';
+                        }
+                    }, 5000)
+                } else {
+                    arrayOfTrue.push(1)
+                }
+                label.addEventListener('click', () => {
+                    if (labelCheckbox.classList.contains('error')) {
+                        labelCheckbox.classList.remove('error');
+                        labelText.style.color = '#94a3b8';
+                    }
+                })
+            }
+        })
+        if (arrayOfTrue.every(item => item === 1)) {
+            document.querySelector('#modal-thx').classList.add('active');
+            inputs.forEach((input, index) => {
+                if (index !== 3) {
+                    input.value = ''
+                } else {
+                    input.checked = false;
+                }
+            })
+        }
+    })
+    form_5.forEach((form, i) => {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const inputs = form.querySelectorAll('input');
+            const label = form.querySelector('label');
+            const labelCheckbox = form.querySelector('label > div');
+            const labelText = form.querySelector('label > p');
+            const arrayOfTrue = [];
+            inputs.forEach((input, index) => {
+                if (index !== 2) {
+                    if (input.value === '') {
+                        arrayOfTrue.push(0)
+                        input.classList.add('error');
+                        setTimeout(() => {
+                            if (input.classList.contains('error')) {
+                                input.classList.remove('error')
+                            }
+                        }, 5000);
+                    } else {
+                        arrayOfTrue.push(1)
+                    }
+                    input.addEventListener('focus', () => {
+                        if (input.classList.contains('error')) {
+                            input.classList.remove('error');
+                        }
+                    })
+                } else {
+                    if (!input.checked) {
+                        labelCheckbox.classList.add('error');
+                        labelText.style.color = '#F87272';
+                        arrayOfTrue.push(0)
+                        setTimeout(() => {
+                            if (labelCheckbox.classList.contains('error')) {
+                                labelCheckbox.classList.remove('error');
+                                labelText.style.color = '#94a3b8';
+                            }
+                        }, 5000)
+                    } else {
+                        arrayOfTrue.push(1)
+                    }
+                    label.addEventListener('click', () => {
+                        if (labelCheckbox.classList.contains('error')) {
+                            labelCheckbox.classList.remove('error');
+                            labelText.style.color = '#94a3b8';
+                        }
+                    })
+                }
+            })
+            if (arrayOfTrue.every(item => item === 1)) {
+                document.querySelectorAll('.overlay').forEach(modal => {
+                    if (modal.classList.contains('active')) {
+                        modal.classList.remove('active')
+                    }
+                })
+                document.querySelector('#modal-thx').classList.add('active');
+                inputs.forEach((input, index) => {
+                    if (index !== 2) {
+                        input.value = ''
+                    } else {
+                        input.checked = false;
+                    }
+                })
+            }
+        })
+    })
 }

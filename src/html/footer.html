@@ -6,9 +6,9 @@
             </a>
             <nav class="footer__navbar">
                 <ul>
-                    <li><a href="#ceilings" scroll>Цены</a></li>
+                    <li><a href="#options" scroll>Цены</a></li>
                     <li><a href="#calc" scroll>Калькулятор</a></li>
-                    <li><a href="#prices" scroll>Примеры работ</a></li>
+                    <li><a href="#production" scroll>Примеры работ</a></li>
                     <li><a href="#contacts" scroll>Контакты</a></li>
                 </ul>
             </nav>
@@ -79,7 +79,7 @@
 
 <div class="hidden-menu" id="hidden-menu">
     <div class="hidden-menu__body">
-        <a href="#" class="hidden-menu__close">
+        <a href="#header" scroll class="hidden-menu__close">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path opacity="0.7" d="M4.55806 4.55806C4.80214 4.31398 5.19786 4.31398 5.44194 4.55806L10 9.11612L14.5581 4.55806C14.8021 4.31398 15.1979 4.31398 15.4419 4.55806C15.686 4.80214 15.686 5.19786 15.4419 5.44194L10.8839 10L15.4419 14.5581C15.686 14.8021 15.686 15.1979 15.4419 15.4419C15.1979 15.686 14.8021 15.686 14.5581 15.4419L10 10.8839L5.44194 15.4419C5.19786 15.686 4.80214 15.686 4.55806 15.4419C4.31398 15.1979 4.31398 14.8021 4.55806 14.5581L9.11612 10L4.55806 5.44194C4.31398 5.19786 4.31398 4.80214 4.55806 4.55806Z" fill="#0F172A"/>
             </svg>                
@@ -91,7 +91,7 @@
         <nav class="hidden-menu__navbar">
             <ul class="hidden-menu__list">
                 <li class="hidden-menu__item">
-                    <a href="#production" scroll class="hidden-menu__link btn-white">
+                    <a href="#options" scroll class="hidden-menu__link btn-white">
                         Цены
                     </a>
                 </li>
@@ -101,7 +101,7 @@
                     </a>
                 </li>
                 <li class="hidden-menu__item">
-                    <a href="#price" scroll class="hidden-menu__link btn-white">
+                    <a href="#production" scroll class="hidden-menu__link btn-white">
                         Примеры работ
                     </a>
                 </li>
@@ -156,15 +156,50 @@
             </svg>                
         </a>
         <div class="modal__title">
-            Обратная связь
+            Форма обратной связи
         </div>
         <div class="modal__subtitle">
-            Оставьте ваши контактные данные и мы свяжемся с вами
+            Мы свяжемся с вами в течение рабочего дня и поможем, подскажем или посоветуем
         </div>
-        <form class="modal__form">
+        <form class="modal__form" data-form="modal-form">
             <input type="text" placeholder="Имя">
-            <input type="text" class="masked" placeholder="Телефон">
-            <textarea placeholder="Комментарий"></textarea>
+            <!-- <input type="text" class="masked" placeholder="Телефон"> -->
+            <input type="text" placeholder="E-mail">
+            <input type="checkbox" name="police-1" id="police-modal" class="police-modal">
+            <label for="police-modal">
+                <div>
+                    <img src="./img/done.svg" alt="done">
+                </div>
+                <p>Я даю согласие  на обработку персональных  данных</p>
+            </label>
+            <button type="submit" class="btn-blue">Отправить</button>
+        </form>
+    </div>
+</div>
+<div class="overlay" id="modal-catalog">
+    <div class="modal">
+        <a href="#" class="modal__close" toggle="#modal-catalog">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.7" d="M11.447 1.13548C11.6911 1.37956 11.6911 1.77528 11.447 2.01936L7.1749 6.29147L11.447 10.5636C11.6911 10.8076 11.6911 11.2034 11.447 11.4475C11.2029 11.6915 10.8072 11.6915 10.5631 11.4475L6.29102 7.17535L2.01891 11.4475C1.77483 11.6915 1.37911 11.6915 1.13503 11.4475C0.890951 11.2034 0.890951 10.8076 1.13503 10.5636L5.40713 6.29147L1.13503 2.01936C0.890952 1.77528 0.890951 1.37956 1.13503 1.13548C1.37911 0.891401 1.77484 0.891401 2.01891 1.13548L6.29102 5.40758L10.5631 1.13548C10.8072 0.891401 11.2029 0.891401 11.447 1.13548Z" fill="#0F172A"/>
+            </svg>                
+        </a>
+        <div class="modal__title">
+            Получите каталог
+        </div>
+        <div class="modal__subtitle">
+            Оставьте ваши данные и мы вышлем вам актуальный каталог, а так же проконсультируем
+        </div>
+        <form class="modal__form" data-form="modal-form">
+            <input type="text" placeholder="Имя">
+            <!-- <input type="text" class="masked" placeholder="Телефон"> -->
+            <input type="text" placeholder="E-mail">
+            <input type="checkbox" name="police-2" id="police-modal-2" class="police-modal">
+            <label for="police-modal-2">
+                <div>
+                    <img src="./img/done.svg" alt="done">
+                </div>
+                <p>Я даю согласие  на обработку персональных  данных</p>
+            </label>
             <button type="submit" class="btn-blue">Отправить</button>
         </form>
     </div>

@@ -385,6 +385,13 @@
                 }
             }
         }
+        &__smallnavbar {
+            display: none;
+        }
+        &__menu {
+            display: flex;
+            margin-left: auto;
+        }
     }
 }
 @media (max-width: 540px) {
@@ -442,12 +449,7 @@
             font-size: 18px;
             line-height: 28px;
         }
-        &__smallnavbar {
-            display: none;
-        }
-        &__menu {
-            display: flex;
-        }
+     
         &__bottom {
             justify-content: space-between;
         }

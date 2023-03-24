@@ -5,7 +5,7 @@ flsFunction.calcWidthScroll();
 flsFunction.mask();
 flsFunction.openHeaderCallback();
 flsFunction.openHiddenMenu();
-// flsFunction.rangeSlider();
+flsFunction.rangeSlider();
 flsFunction.customSelect();
 // flsFunction.beforAfter();
 // flsFunction.tabs();
@@ -19,6 +19,7 @@ flsFunction.openModal();
 flsFunction.hiddenAdv();
 flsFunction.photosSlider();
 flsFunction.reviewsSlider();
+flsFunction.submitForms();
 
 let im = new Inputmask({
     mask: '8 (999) 999-99-99',

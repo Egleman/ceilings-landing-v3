@@ -52,7 +52,7 @@
                     <span>23 000 руб</span>
                 </div>
             </div>
-            <form action="#" class="banner__form">
+            <form action="#" class="banner__form" data-form="outside">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 5C2.25 3.48122 3.48122 2.25 5 2.25H8.27924C9.03249 2.25 9.70124 2.732 9.93944 3.4466L11.4372 7.94004C11.7126 8.76624 11.3386 9.66921 10.5597 10.0587L8.96962 10.8537C9.92192 12.6215 11.3785 14.0781 13.1463 15.0304L13.9413 13.4403C14.3308 12.6614 15.2338 12.2874 16.06 12.5628L20.5534 14.0606C21.268 14.2988 21.75 14.9675 21.75 15.7208V19C21.75 20.5188 20.5188 21.75 19 21.75H18C9.30152 21.75 2.25 14.6985 2.25 6V5ZM5 3.75C4.30964 3.75 3.75 4.30964 3.75 5V6C3.75 13.8701 10.1299 20.25 18 20.25H19C19.6904 20.25 20.25 19.6904 20.25 19V15.7208C20.25 15.6132 20.1811 15.5176 20.0791 15.4836L15.5856 13.9858C15.4676 13.9464 15.3386 13.9999 15.283 14.1111L14.1543 16.3684C13.9743 16.7284 13.5422 16.8822 13.1752 16.7167C10.5638 15.5393 8.46071 13.4362 7.28329 10.8248C7.11784 10.4578 7.27157 10.0257 7.6316 9.84568L9.88886 8.71705C10.0001 8.66141 10.0536 8.53241 10.0142 8.41438L8.51641 3.92094C8.48238 3.81886 8.38685 3.75 8.27924 3.75H5Z" fill="#94A3B8"/>
                 </svg>
@@ -663,11 +663,11 @@
                                         <path d="M0.46967 0.46967C0.762563 0.176777 1.23744 0.176777 1.53033 0.46967L8 6.93934L14.4697 0.46967C14.7626 0.176777 15.2374 0.176777 15.5303 0.46967C15.8232 0.762563 15.8232 1.23744 15.5303 1.53033L8.53033 8.53033C8.23744 8.82322 7.76256 8.82322 7.46967 8.53033L0.46967 1.53033C0.176777 1.23744 0.176777 0.762563 0.46967 0.46967Z" fill="#94A3B8"/>
                                     </svg>
                                     <div class="calc__options">
-                                        <p class="option">Матовый</p>
-                                        <p class="option">Глянцевые</p>
-                                        <p class="option">Сатиновые</p>
-                                        <p class="option">Цветные</p>
-                                        <p class="option">Тканевые</p>
+                                        <p class="option" data-price="489">Матовый</p>
+                                        <p class="option" data-price="489">Глянцевые</p>
+                                        <p class="option" data-price="489">Сатиновые</p>
+                                        <p class="option" data-price="610">Цветные</p>
+                                        <p class="option" data-price="1190">Тканевые</p>
                                     </div>                                     
                                 </div>
                             </div>
@@ -716,7 +716,7 @@
                             <p>32 440 руб</p>
                             <span>Стоимость натяжных потолков</span>
                         </div>
-                        <form action="#" class="calc__form">
+                        <form action="#" class="calc__form" data-form="outside-2">
                             <div class="calc__form-input">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0.25 3C0.25 1.48122 1.48122 0.25 3 0.25H6.27924C7.03249 0.25 7.70124 0.732002 7.93944 1.4466L9.43725 5.94004C9.71265 6.76624 9.33862 7.66921 8.55968 8.05869L6.96962 8.85371C7.92192 10.6215 9.37853 12.0781 11.1463 13.0304L11.9413 11.4403C12.3308 10.6614 13.2338 10.2874 14.06 10.5628L18.5534 12.0606C19.268 12.2988 19.75 12.9675 19.75 13.7208V17C19.75 18.5188 18.5188 19.75 17 19.75H16C7.30152 19.75 0.25 12.6985 0.25 4V3ZM3 1.75C2.30964 1.75 1.75 2.30964 1.75 3V4C1.75 11.8701 8.12994 18.25 16 18.25H17C17.6904 18.25 18.25 17.6904 18.25 17V13.7208C18.25 13.6132 18.1811 13.5176 18.0791 13.4836L13.5856 11.9858C13.4676 11.9464 13.3386 11.9999 13.283 12.1111L12.1543 14.3684C11.9743 14.7284 11.5422 14.8822 11.1752 14.7167C8.56377 13.5393 6.46071 11.4362 5.28329 8.82476C5.11784 8.45781 5.27157 8.02569 5.6316 7.84568L7.88886 6.71705C8.00014 6.66141 8.05357 6.53241 8.01422 6.41438L6.51641 1.92094C6.48238 1.81886 6.38685 1.75 6.27924 1.75H3Z" fill="#94A3B8"/>
@@ -772,6 +772,7 @@
         </div>
     </section>
     <section class="options">
+        <div class="anchor" id="options"></div>
         <div class="container">
             <div class="options__title title">
                 Виды <span>натяжных</span><br> потолков
@@ -797,7 +798,7 @@
                         <p>от 589 руб/м<sup>2</sup></p>
                         <span>Стоимость с монтажем</span>
                     </div>
-                    <a href="#" class="options__card-want">Хочу так же</a>
+                    <a href="#" toggle="#modal-callback" class="options__card-want">Хочу так же</a>
                 </div>
                 <div class="options__card">
                     <img src="./img/variable-2.png" alt="img">
@@ -811,7 +812,7 @@
                         <p>от 589 руб/м<sup>2</sup></p>
                         <span>Стоимость с монтажем</span>
                     </div>
-                    <a href="#" class="options__card-want">Хочу так же</a>
+                    <a href="#" toggle="#modal-callback" class="options__card-want">Хочу так же</a>
                 </div>
                 <div class="options__card">
                     <img src="./img/variable-3.png" alt="img">
@@ -825,7 +826,7 @@
                         <p>от 589 руб/м<sup>2</sup></p>
                         <span>Стоимость с монтажем</span>
                     </div>
-                    <a href="#" class="options__card-want">Хочу так же</a>
+                    <a href="#" toggle="#modal-callback" class="options__card-want">Хочу так же</a>
                 </div>
                 <div class="options__card">
                     <img src="./img/variable-4.png" alt="img">
@@ -839,7 +840,7 @@
                         <p>от 710 руб/м<sup>2</sup></p>
                         <span>Стоимость с монтажем</span>
                     </div>
-                    <a href="#" class="options__card-want">Хочу так же</a>
+                    <a href="#" toggle="#modal-callback" class="options__card-want">Хочу так же</a>
                 </div>
                 <div class="options__card">
                     <img src="./img/variable-5.png" alt="img">
@@ -853,14 +854,14 @@
                         <p>от 1590 руб/м<sup>2</sup></p>
                         <span>Стоимость с монтажем</span>
                     </div>
-                    <a href="#" class="options__card-want">Хочу так же</a>
+                    <a href="#" toggle="#modal-callback" class="options__card-want">Хочу так же</a>
                 </div>
                 <div class="options__card options__card_catalog">
                     <div class="options__card-text">
                         Не забывайте, что бесплатный замер (даже если вы откажетесь от заказа, замер для вас бесплатный)
                     </div>
                     <div class="options__card-link">
-                        <a href="#" class="text">Получить предложение</a>
+                        <a href="#" toggle="#modal-catalog" class="text">Получить предложение</a>
                         <div class="arrow">
                             <div class="arrow__body">
                                 <svg width="31" height="29" viewBox="0 0 31 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1037,7 +1038,7 @@
                 </div>
             </div>
             <div class="free__bottom">
-                <form action="#" class="free__form">
+                <form action="#" class="free__form" data-form="outside-3">
                     <p class="free__form-label">Бесплатный выезд замерщика</p>
                     <div class="free__form-wrapper">
                         <div class="free__form-input">
@@ -1535,7 +1536,7 @@
                     
                 </div>
                 <div class="contacts__wrapper-right">
-                    <form class="contacts__form">
+                    <form class="contacts__form" data-form="outside-4">
                         <p class="contacts__form-title">Форма обратной связи</p>
                         <p class="contacts__form-subtitle">
                             Мы свяжемся с вами в течение рабочего дня и поможем, подскажем или посоветуем

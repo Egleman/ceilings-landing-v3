@@ -1,8 +1,8 @@
 .anchor {
     position: absolute;
-    left: -1;
+    left: -1px;
     bottom: 100%;
-    height: 140px;
+    // height: 140px;
 }
 @media (max-width: 475px) {
     .anchor {
